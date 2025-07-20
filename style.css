@@ -1,0 +1,278 @@
+/* NAV BAR START */
+nav {
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    top: 0;
+    position: sticky;
+}
+
+.nav-left input {
+    height: 40px;
+    width: 450px;
+    padding: 0 20px;
+    background-color: #2a2a2a;
+    /* dark background */
+    color: #fff;
+    /* white text */
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.nav-left input::placeholder {
+    color: #aaa;
+}
+
+.nav-left input:focus {
+    background-color: #3a3a3a;
+    box-shadow: 0 0 0 2px #0cdf3d;
+    /* Spotify green border */
+    color: #fff;
+}
+
+.nav-left input:hover {
+    background-color: rgb(67, 67, 66);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    /* vertical centering */
+    gap: 15px;
+    /* spacing between items */
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    /* vertical centering */
+    gap: 15px;
+    /* spacing between items */
+}
+
+.nav-right>a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.nav-button>button {
+    background-color: #fcfcfc;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+
+    height: 40px;
+    cursor: pointer;
+}
+
+/* NAV BAR END  */
+
+/* MAIN CONTAINER STARTED */
+.main-container {
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 8px;
+
+}
+
+/* lest side starting */
+.left {
+    width: 25%;
+    height: 78vh;
+    background-color: #1E1E1E;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+}
+
+.left::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+.right {
+    background-color: #1E1E1E;
+    height: 82vh;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: auto;
+    scrollbar-width: auto;
+    scrollbar-color: #7a7b7b #3e3c3c;
+
+}
+
+
+.left>.top-bar {
+    height: auto;
+    display: flex;
+    gap: 210px;
+    margin-top: 22px;
+    margin-left: 20px;
+}
+
+.left>.top-bar>img {
+    height: 20px;
+}
+
+/* lest side ending */
+
+/* starting progress-box */
+.progress-box {
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    height: 60px;
+    right: 0;
+
+    position: fixed;
+    bottom: 0;
+
+}
+
+.progresBar {
+    height: 4px;
+    width: 80%;
+    background-color: rgb(8, 77, 15);
+    cursor: pointer;
+}
+
+
+
+.circle {
+    height: 20px;
+    width: 20px;
+    background-color: #000000;
+    border-radius: 50%;
+    position: relative;
+    top: -8px;
+    transition: all 1s ease-out;
+}
+
+/* ending progress-box */
+
+/* Right side start */
+
+
+
+.SongPlaylist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* flex-direction: row; */
+}
+
+.card1 {
+    height: 270px;
+    width: 200px;
+    background-color: #484747;
+    border-radius: 5px;
+    margin: 15px;
+    position: relative;
+    display: flex;
+    gap: 9px;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+.card1:hover {
+    background-color: rgb(99, 97, 97);
+}
+
+.card1 img {
+    height: 174px;
+    object-fit: contain;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.card1 h2,
+p {
+    margin-left: 15px;
+}
+
+.playSVG {
+    position: absolute;
+    left: 140px;
+    bottom: 22px;
+    cursor: pointer;
+}
+
+.playSVG:hover {
+    transform: scale(1.2);
+    transition: all 4ms ease-in-out;
+}
+
+.songList ul {
+    margin-top: 5px;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.songList ul li {
+    height: 80px;
+
+    padding: 10px;
+    border: 4px solid white;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.songList ul li:hover {
+    background-color: #636161;
+}
+
+.footer-links {
+    background-color: #070707;
+
+    height: 100px;
+    width: 24.8%;
+    position: relative;
+    top: -49px;
+
+
+}
+
+.footer-links a {
+    text-decoration: none;
+    padding-left: 10px;
+    
+    font-style: italic;
+    position: relative;
+    bottom: -57px;
+
+}
+
+.footer-links a:hover{
+    border: 2px solid;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 30px;
